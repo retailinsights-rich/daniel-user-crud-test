@@ -15,7 +15,7 @@
             <div>
                 <p class="text-2xl font-semibold mb-2">User List</p>
             </div>
-            <div class="flex gap-4 items-center">
+            <div class="flex gap-4 items-center" v-if="isAdmin">
                 <div class="bg-blue-600 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-500" @click="dialogs.createUser = true">
                     Create User
                 </div>
